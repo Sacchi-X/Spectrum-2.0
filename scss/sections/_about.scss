@@ -1,0 +1,49 @@
+.about-container{
+    background:$base-color;
+    height:auto;
+    text-align: center;
+    color:$base-color-2;
+    padding-top: 16em;
+
+    .about-main{
+        padding-bottom: 3em;
+        
+
+        .columns{
+            font-size: $fs-l;
+            font-weight: $bolder;
+            text-align: justify;
+            column-count: 2;
+            column-gap: 2em;
+            // column-width: 50px;
+            margin-bottom: 2em;
+
+            
+            
+        }
+
+        h3{
+            font-size: $fs-mini-h;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.about-us{
+    position: relative;
+    display: inline-block;
+}
+
+.about-us::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $white;
+    width: 50%;
+    height: 2px;
+    left:50%;
+    top:-1rem;
+    transform: translateX(-50%);
+
+}
+

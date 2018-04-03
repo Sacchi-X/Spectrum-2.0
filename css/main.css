@@ -1,0 +1,173 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat ExtraBold", "sans-serif";
+  line-height: .9;
+}
+
+p {
+  font-family: "Merriweather", "serif";
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.display-l {
+  font-size: 9rem;
+}
+
+.emphasis {
+  color: white;
+}
+
+.hero {
+  padding-top: 8rem;
+  padding-left: 5rem;
+  position: relative;
+  height: 100%;
+  z-index: 10;
+}
+
+.hero-bg {
+  background: url(../../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.solution::after {
+  content: '';
+  display: inline-block;
+  align-self: center;
+  background: #212529;
+  width: 1rem;
+  height: 1rem;
+}
+
+nav .nav-link {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-family: "Montserrat ExtraBold", "sans-serif";
+  letter-spacing: 2px;
+  color: #383f45;
+}
+
+nav .link-link:hover {
+  color: black;
+}
+
+nav .link-link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -8px;
+  width: 0%;
+  height: 2px;
+  background-color: #0a0c0d;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+nav .link-link:hover::after {
+  width: 100%;
+}
+
+nav .link-link:active::after {
+  width: 100%;
+}
+
+nav li {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+nav i {
+  margin-right: .5em;
+}
+
+nav .icons a {
+  color: inherit;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  font-family: "Montserrat ExtraBold", "sans-serif";
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: .5em;
+}
+
+.twitter:hover {
+  fill: white;
+}
+
+.facebook:hover {
+  fill: #4867AA;
+}
+
+.instagram:hover {
+  fill: gold;
+}
+
+.about-container {
+  background: #212529;
+  height: auto;
+  text-align: center;
+  color: #FC814A;
+  padding-top: 16em;
+}
+
+.about-container .about-main {
+  padding-bottom: 3em;
+}
+
+.about-container .about-main .columns {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: justify;
+  column-count: 2;
+  column-gap: 2em;
+  margin-bottom: 2em;
+}
+
+.about-container .about-main h3 {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.about-us {
+  position: relative;
+  display: inline-block;
+}
+
+.about-us::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  height: 2px;
+  left: 50%;
+  top: -1rem;
+  transform: translateX(-50%);
+}
